@@ -65,6 +65,7 @@ public class ClaimConsumer {
 
             moveFolder(documentDir,serverDir);
         }
+        LOGGER.info(claim.toString());
     }
 
     public void writeFileDocumnent(ClaimEntity claim,String CurrentDate,String documentDir) throws IOException {
