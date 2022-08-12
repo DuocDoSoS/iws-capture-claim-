@@ -111,4 +111,9 @@ public class ClaimController {
             return new ResponseEntity<>(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello";
+    }
 }
